@@ -3,7 +3,8 @@
 getfem-binder
 =============
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/tkoyama010/getfem-binder/tkoyama010-patch-2)
+.. image:: https://mybinder.org/badge_logo.svg
+ :target: https://mybinder.org/v2/gh/tkoyama010/getfem-binder/tkoyama010-patch-2
 
 This is a `binder <http://mybinder.org>`_  helper for
 `GetFEM <http://github.com/getfem-doc/getfem>`_.
