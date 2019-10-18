@@ -69,6 +69,8 @@ RUN git clone https://git.savannah.nongnu.org/git/getfem.git && \
     make -j8 && \
     make check
 
+RUN git clone https://github.com/tkoyama010/getfem-binder.git
+
 # Install Jupyter notebook extensions
 RUN pip install RISE && \
     jupyter nbextension install rise --py --sys-prefix && \
