@@ -70,7 +70,7 @@ RUN git clone https://git.savannah.nongnu.org/git/getfem.git && \
     make check
 
 RUN git clone https://github.com/tkoyama010/getfem-binder.git && \
-    cd getfem-binder.git && \
+    cd getfem-binder && \
     git checkout tkoyama010-patch-2
 
 # Install Jupyter notebook extensions
