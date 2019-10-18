@@ -1,24 +1,24 @@
 .. -*- mode: rst -*-
 
-mne-binder
-==========
+getfem-binder
+=============
 
 This is a `binder <http://mybinder.org>`_  helper for
-`MNE-Python <http://github.com/mne-tools/mne-python>`_.
+`GetFEM <http://github.com/getfem-doc/getfem>`_.
 
 Notebooks can be launched with e.g.:
 
-    http://mybinder.org/repo/mne-tools/mne-binder/notebooks/plot_introduction.ipynb
+    http://mybinder.org/repo/getfem-doc/getfem-binder/notebooks/plot_introduction.ipynb
 
 Licensing
 ^^^^^^^^^
 
-MNE-Binder is **BSD-licenced** (3 clause):
+getfem-Binder is **BSD-licenced** (3 clause):
 
     This software is OSI Certified Open Source Software.
     OSI Certified is a certification mark of the Open Source Initiative.
 
-    Copyright (c) 2011, authors of MNE-Python
+    Copyright (c) 2019, authors of getfem-Python
     All rights reserved.
 
     Redistribution and use in source and binary forms, with or without
@@ -31,7 +31,7 @@ MNE-Binder is **BSD-licenced** (3 clause):
       this list of conditions and the following disclaimer in the documentation
       and/or other materials provided with the distribution.
 
-    * Neither the names of MNE-Python authors nor the names of any
+    * Neither the names of getfem-Python authors nor the names of any
       contributors may be used to endorse or promote products derived from
       this software without specific prior written permission.
 
