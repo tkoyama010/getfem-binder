@@ -23,8 +23,27 @@ RUN apt-get install -yq --no-install-recommends \
 
 ENV DISPLAY=:99
 
+# compile GetFEM
+RUN apt-get install -yq --no-install-recommends \
+    automake \
+    libtool \
+    make \
+    g++ \
+    libqd-dev \
+    libqhull-dev \
+    libmumps-seq-dev \
+    liblapack-dev \
+    libopenblas-dev \
+    libpython3-dev \
+    && apt-get clean
+
 # Switch to notebook user
 USER $NB_UID
+RUN git clone https://git.savannah.nongnu.org/git/getfem.git
+RUN cd getfem
+RUN bash autogen.sh
+RUN ./configure --with-pic --enable-python3
+RUN make -j8 && make check
 
 # Upgrade the package managers
 RUN pip install --upgrade pip
