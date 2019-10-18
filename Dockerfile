@@ -39,11 +39,12 @@ RUN apt-get install -yq --no-install-recommends \
 
 # Switch to notebook user
 USER $NB_UID
-RUN git clone https://git.savannah.nongnu.org/git/getfem.git
-RUN cd getfem
-RUN bash autogen.sh
-RUN ./configure --with-pic --enable-python3
-RUN make -j8 && make check
+RUN git clone https://git.savannah.nongnu.org/git/getfem.git && \
+    cd getfem && \
+    bash autogen.sh && \
+    ./configure --with-pic --enable-python3 && \
+    make -j8 && \
+    make check
 
 # Upgrade the package managers
 RUN pip install --upgrade pip
