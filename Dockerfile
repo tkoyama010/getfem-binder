@@ -68,7 +68,8 @@ RUN git clone https://github.com/getfem-doc/getfem.git && \
     bash autogen.sh && \
     ./configure --with-pic --enable-python3 && \
     make -j8 && \
-    make check
+    make -j8 check \
+    make install
 
 RUN git clone https://github.com/tkoyama010/getfem-binder.git && \
     cd getfem-binder && \
