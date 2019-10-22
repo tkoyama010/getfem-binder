@@ -62,7 +62,7 @@ RUN pip install vtk && \
     pip install matplotlib
 
 # Compile GetFEM
-RUN git clone https://git.savannah.nongnu.org/git/getfem.git && \
+RUN git clone https://github.com/getfem-doc/getfem.git && \
     cd getfem && \
     bash autogen.sh && \
     ./configure --with-pic --enable-python3 && \
