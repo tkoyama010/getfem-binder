@@ -11,6 +11,7 @@ RUN apt-get update && apt-get -yq dist-upgrade \
     vim \
     curl \
     gcc \
+    gmsh \
     && apt-get clean
 
 # Xvfb
