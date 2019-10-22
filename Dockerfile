@@ -1,6 +1,6 @@
 FROM jupyter/minimal-notebook:65761486d5d3
 
-MAINTAINER Jean-Remi King <jeanremi.king@gmail.com>
+LABEL Tetsuo Koyama <tkoyama010@gmail.com>
 
 # Install core debian packages
 USER root
