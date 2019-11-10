@@ -65,14 +65,15 @@ RUN pip install vtk && \
 # Compile GetFEM
 RUN git clone https://github.com/getfem-doc/getfem.git && \
     cd getfem && \
+    git checkout devel-tetsuo-add-epsilon && \
     bash autogen.sh && \
-    ./configure --with-pic --enable-python3 && \
+    ./configure --with-pic && \
     make -j8 && \
     make -j8 check
 
 RUN git clone https://github.com/tkoyama010/getfem-binder.git && \
     cd getfem-binder && \
-    git checkout tkoyama010-patch-2
+    git checkout tkoyama010-patch-4
 
 # Install Jupyter notebook extensions
 RUN pip install RISE && \
